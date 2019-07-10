@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list">
+
+    <ListView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id = "@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:stackFromBottom="true"
+        android:dividerHeight="0dp"></ListView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint = "궁금한 점을 적어주세요!"
+        android:textColorHint="#0033a0"
+        android:layout_alignParentLeft="true"
+        android:id = "@+id/user_message"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:src = "@drawable/ic_send"
+        android:id = "@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

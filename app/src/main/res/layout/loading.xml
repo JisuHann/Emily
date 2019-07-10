@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loading_gradient">
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/OverProject" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:gravity="center"
+        android:text="학교 생활의 길을 열어줄 \n카이스트 AI 챗봇 친구 에밀리"
+        android:textSize="14dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="269dp"
+        android:layout_height="192dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="166dp" />
+</RelativeLayout>
