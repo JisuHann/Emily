@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mascot" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@id/imageView"
+        android:layout_width="360dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="가장 가까이에서 넙죽님의 학교 생활을 도와드릴\n파트너에요! 언제든 필요한게 있으면 말씀해주세요!" />
+
+    <Button
+        android:id="@+id/first_2"
+        android:layout_below="@id/textView"
+        android:background="@drawable/buttonshape"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="연락처 검색"
+        android:padding="8dp"
+        android:gravity="bottom|center"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/first_1"
+        android:background="@drawable/buttonshape"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/first_2"
+        android:layout_toRightOf="@+id/first_2"
+        android:padding="8dp"
+        android:gravity="bottom|center"
+        android:text="위치 검색"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/first_3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="-154dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/first_1"
+        android:layout_toRightOf="@+id/first_4"
+        android:background="@drawable/buttonshape"
+        android:text="학식"
+        android:padding="8dp"
+        android:gravity="bottom|center"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/first_4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/first_3"
+        android:layout_toRightOf="@id/first_3"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="사이트 접속"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/first_5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/first_2"
+        android:layout_marginStart="-221dp"
+        android:layout_marginLeft="-221dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/first_3"
+        android:layout_toRightOf="@id/first_3"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="학사 일정"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/first_6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/first_1"
+        android:layout_marginStart="-147dp"
+        android:layout_marginLeft="-147dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/first_3"
+        android:layout_toRightOf="@id/first_3"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="시설 정보"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/first_7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/first_3"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/first_6"
+        android:layout_toRightOf="@+id/first_6"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="자주 묻는 정보"
+        android:textSize="9dp" />
+
+    <Button
+        android:id="@+id/first_8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/first_4"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/first_3"
+        android:layout_toRightOf="@id/first_3"
+        android:background="@drawable/buttonshape"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="직접\n 이야기하기"
+        android:textSize="10dp" />
+
+</RelativeLayout>
