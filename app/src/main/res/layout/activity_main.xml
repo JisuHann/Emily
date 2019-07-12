@@ -1,41 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/relativelayout"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_list">
+    android:background="@drawable/main_gradient1">
 
-    <ListView
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:id = "@+id/listview"
+
+    <RelativeLayout
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50dp"
-        android:stackFromBottom="true"
-        android:dividerHeight="0dp"></ListView>
+        android:layout_above="@+id/user_message"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="45dp">
+        <include
+            android:id="@+id/main_first"
+            layout="@layout/main_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-    <EditText
+        <include
+            android:visibility="invisible"
+            android:id="@+id/main_second"
+            layout="@layout/response"
+            android:layout_below="@id/main_first"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <include
+            android:visibility="invisible"
+            android:layout_below="@id/main_second"
+            android:id = "@+id/main_third"
+            layout="@layout/emily_button_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:visibility="invisible"
+            android:id="@+id/main_fourth"
+            layout="@layout/response"
+            android:layout_below="@id/main_third"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <include
+            android:visibility="invisible"
+            android:id = "@+id/main_fifth"
+            layout="@layout/emily_text"
+            android:layout_below = "@id/main_fourth"
+            android:layout_width="match_parent"
+            android:layout_height = "wrap_content"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id = "@+id/main_send_message"
         android:layout_width="match_parent"
-        android:layout_marginRight="40dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:visibility="invisible"
         android:layout_alignParentBottom="true"
-        android:hint = "궁금한 점을 적어주세요!"
-        android:textColorHint="#0033a0"
-        android:layout_alignParentLeft="true"
-        android:id = "@+id/user_message"
-        />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:clickable="true"
-        android:src = "@drawable/ic_send"
-        android:id = "@+id/fab"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="@null"
-        android:layout_alignParentRight="true" />
+        android:layout_marginBottom="0dp">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/keyboard1"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="9dp"
+            android:background="@null"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/keyboard" />
+
+        <EditText
+            android:id="@+id/user_message1"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/keyboard1"
+            android:layout_toLeftOf="@+id/keyboard1"
+            android:layout_toEndOf="@+id/voice"
+            android:layout_toRightOf="@+id/voice1"
+            android:backgroundTint="#0400A6"
+            android:gravity="center_horizontal"
+            android:hint="Any questions?"
+            android:textColorHint="#0033a0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/voice1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/microphone5" />
+    </LinearLayout>
 </RelativeLayout>

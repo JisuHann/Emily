@@ -27,9 +27,5 @@ public class loading extends Animation {
         float value = from+ (to - from)*interpolatedTime;
         progressBar.setProgress((int) value);
 
-        if(value == to){
-            context.startActivity(new Intent((context), MainActivity.class));
-        }
-
     }
 }
