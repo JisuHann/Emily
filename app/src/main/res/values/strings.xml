@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Emily</string>
+    <string name="edittext_hint"><font size="15">1일1에밀리</font></string>
 </resources>

@@ -2,11 +2,11 @@ package com.example.emily;
 
 public class response_model {
     String message;
-    boolean isSend;
+    int tipo;                                                           //bot:0, user:1
 
-    response_model(String message, boolean isSend){
+    response_model(String message, int tipo){
         this.message = message;
-        this.isSend = isSend;
+        this.tipo = tipo;
     }
 
     response_model(){}
@@ -19,11 +19,11 @@ public class response_model {
         this.message = message;
     }
 
-    public boolean isSend() {
-        return isSend;
+    public int getTipo() {
+        return tipo;
     }
 
-    public void setSend(boolean send) {
-        isSend = send;
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 }

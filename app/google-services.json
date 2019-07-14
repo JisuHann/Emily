@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "926941050237",
+    "firebase_url": "https://emily-puowgc.firebaseio.com",
+    "project_id": "emily-puowgc",
+    "storage_bucket": "emily-puowgc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926941050237:android:d84660c0a5b8a152",
+        "android_client_info": {
+          "package_name": "com.example.emily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926941050237-h5oeqt4sqllj0i0up1pqo5isb0kblc45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emily",
+            "certificate_hash": "ff0bd019bdf982da0f3e5de4e05cb3a53fbb047a"
+          }
+        },
+        {
+          "client_id": "926941050237-6404qcb6u3dhukmd36e1ijt0lr0n6ufb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3et6KRG9IWmfQDMUqds0gwq-8SSURNFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926941050237-7rgsdu0omu2j1tcor9118heglsevs7sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
