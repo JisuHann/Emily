@@ -1,4 +1,4 @@
-# Project Title
+# Emily
 Chatbot named "Emily" that is based on Android, Firebase and Dialogflow.
 ### Details
 This project is based from 2019 Summer MadCamp at KAIST(Korea Advanced Institute of Science and Technology)Week3(from July 9th to ) assignment.
